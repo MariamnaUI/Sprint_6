@@ -3,12 +3,13 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
-.idea
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.vscode/
+.idea/
 
 # AWS User-specific
 .idea/**/aws.xml
@@ -105,6 +106,12 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.DS_Store
+*.log
 MANIFEST
 
 # PyInstaller
@@ -138,6 +145,7 @@ cover/
 
 # Django stuff:
 *.log
+logs/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -201,8 +209,8 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
-.venv
+.venv/
+.env/
 env/
 venv/
 ENV/
